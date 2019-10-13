@@ -23,6 +23,7 @@ void hue_shift(
 		  rgb_to_hsv(r, g, b, h, s, v);
 		  //not right
 		  h = fmod(h + shift, 360);
+		  
 
 		  hsv_to_rgb(h, s, v, r, g, b);
 		  shifted[(j*width + i) * 3] = (int)(r * 255);

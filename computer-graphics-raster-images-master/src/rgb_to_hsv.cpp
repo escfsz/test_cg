@@ -21,8 +21,11 @@ void rgb_to_hsv(
 	}
 	else
 	{
-		if (fabs(cmax - r) < epislon) {
+		if (fabs(cmax - r) < epislon && g>=b) {
 			h = 60 * ((g - b) / delta + 0);
+		}
+		else if (fabs(cmax - r) < epislon && g<b) {
+			h = 60 * ((g - b) / delta + 6);
 		}
 		else if(fabs(cmax - g)<epislon)
 		{

@@ -11,6 +11,7 @@ void hsv_to_rgb(
 {
   ////////////////////////////////////////////////////////////////////////////
   // Replace with your code here:
+
 	int h1 = (int)(h / 60)%6;
 	double f = h / 60 - h1;
 	double p = v * (1 - s);
@@ -39,6 +40,7 @@ void hsv_to_rgb(
 		break;
 
 	default:
+		std::cout << h1 << std::endl;
 		std::cout << "wrong" << std::endl;
 		break;
 	}
