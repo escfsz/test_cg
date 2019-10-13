@@ -1,2 +1,2 @@
 # test_cg
-csc418 toronto
+from csc418 toronto  
